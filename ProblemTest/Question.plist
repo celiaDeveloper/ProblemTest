@@ -12,171 +12,249 @@
 		<array>
 			<dict>
 				<key>test_id</key>
-				<string>8</string>
-				<key>number</key>
-				<string>1</string>
-				<key>answer</key>
-				<string>B</string>
-				<key>score</key>
-				<string>10</string>
-				<key>topic_id</key>
-				<string>1</string>
-				<key>title</key>
-				<string>吐鲁番盆地被称为什么盆地</string>
-				<key>type</key>
-				<string>1</string>
-				<key>option_xuan</key>
-				<array>
-					<array>
-						<string>A</string>
-						<string>红色盆地</string>
-					</array>
-					<array>
-						<string>B</string>
-						<string>紫色盆地</string>
-					</array>
-					<array>
-						<string>C</string>
-						<string>黄色盆地</string>
-					</array>
-					<array>
-						<string>D</string>
-						<string>蓝色盆地</string>
-					</array>
-				</array>
-			</dict>
-			<dict>
-				<key>test_id</key>
-				<string>8</string>
-				<key>number</key>
 				<string>2</string>
+				<key>number</key>
+				<string>1</string>
 				<key>answer</key>
 				<string>A</string>
 				<key>score</key>
-				<string>10</string>
+				<string>3</string>
 				<key>topic_id</key>
-				<string>2</string>
+				<string>1</string>
 				<key>title</key>
-				<string>曹操麾下哪一个大将被称为“虎痴”</string>
+				<string>习近平总书记对广东工作的重要批示中，“四个坚持”为: 坚持党的领导、坚持中国特色社会主义、______、坚持改革开放</string>
 				<key>type</key>
 				<string>0</string>
 				<key>option_xuan</key>
 				<array>
 					<array>
 						<string>A</string>
-						<string>许诸</string>
+						<string>坚持新发展理念</string>
 					</array>
 					<array>
 						<string>B</string>
-						<string>典韦</string>
+						<string>坚持服务大局</string>
 					</array>
 					<array>
 						<string>C</string>
-						<string>夏侯渊</string>
+						<string>坚持整合资源</string>
 					</array>
 					<array>
 						<string>D</string>
-						<string>徐晃</string>
+						<string>坚持艰苦实干</string>
 					</array>
 				</array>
 			</dict>
 			<dict>
 				<key>test_id</key>
-				<string>8</string>
+				<string>2</string>
 				<key>number</key>
-				<string>3</string>
+				<string>2</string>
 				<key>answer</key>
 				<string>C</string>
 				<key>score</key>
-				<string>10</string>
-				<key>topic_id</key>
 				<string>3</string>
+				<key>topic_id</key>
+				<string>2</string>
 				<key>title</key>
-				<string>历史上最早的编年体通史是？</string>
+				<string>习近平总书记对广东工作的重要批示中，“三个支撑”为: 为全国推进供给侧结构性改革、______、构建开放型经济新体制提供支撑</string>
 				<key>type</key>
 				<string>0</string>
 				<key>option_xuan</key>
 				<array>
 					<array>
 						<string>A</string>
-						<string>左传</string>
+						<string>加快产业转型升级</string>
 					</array>
 					<array>
 						<string>B</string>
-						<string>史记</string>
+						<string>实施“一带一路”战略</string>
 					</array>
 					<array>
 						<string>C</string>
-						<string>资治通鉴</string>
+						<string>实施创新驱动发展战略</string>
 					</array>
 					<array>
 						<string>D</string>
-						<string>春秋</string>
+						<string>全面建成小康社会</string>
 					</array>
 				</array>
 			</dict>
 			<dict>
 				<key>test_id</key>
-				<string>8</string>
+				<string>2</string>
 				<key>number</key>
-				<string>4</string>
+				<string>3</string>
 				<key>answer</key>
 				<string>B</string>
 				<key>score</key>
-				<string>10</string>
+				<string>3</string>
 				<key>topic_id</key>
-				<string>4</string>
+				<string>3</string>
 				<key>title</key>
-				<string>Na 可以用水储存么？</string>
+				<string>习近平总书记对广东工作的重要批示中，“两个走在前列”为: 努力在______、加快建设社会主义现代化新征程上走在前列。</string>
 				<key>type</key>
 				<string>0</string>
 				<key>option_xuan</key>
 				<array>
 					<array>
 						<string>A</string>
-						<string>可以</string>
+						<string>实施创新驱动发展战略</string>
 					</array>
 					<array>
 						<string>B</string>
-						<string>不可以</string>
+						<string>全面建成小康社会</string>
+					</array>
+					<array>
+						<string>C</string>
+						<string>推进供给侧结构性改革</string>
+					</array>
+					<array>
+						<string>D</string>
+						<string>构建开放型经济新体制</string>
 					</array>
 				</array>
 			</dict>
 			<dict>
 				<key>test_id</key>
-				<string>8</string>
+				<string>2</string>
 				<key>number</key>
-				<string>5</string>
+				<string>4</string>
 				<key>answer</key>
-				<string>D</string>
+				<string>C</string>
 				<key>score</key>
-				<string>10</string>
+				<string>3</string>
 				<key>topic_id</key>
-				<string>5</string>
+				<string>4</string>
 				<key>title</key>
-				<string>细胞分裂过程中，为其提供能量的是？</string>
+				<string>我们一定要以______为统领，把握新机遇、应对新挑战，奋力开创广东发展新局面。</string>
 				<key>type</key>
 				<string>0</string>
 				<key>option_xuan</key>
 				<array>
 					<array>
 						<string>A</string>
-						<string>纺锤体</string>
+						<string>省第十二次党代会精神</string>
 					</array>
 					<array>
 						<string>B</string>
-						<string>细胞核</string>
+						<string>推进供给侧结构性改革</string>
+					</array>
+                    <array>
+                        <string>C</string>
+                        <string>习近平总书记重要批示</string>
+                    </array>
+                    <array>
+                        <string>D</string>
+                        <string>习近平总书记治国理政新理念新思想新战略</string>
+                    </array>
+				</array>
+			</dict>
+			<dict>
+				<key>test_id</key>
+				<string>2</string>
+				<key>number</key>
+				<string>5</string>
+				<key>answer</key>
+				<string>C</string>
+				<key>score</key>
+				<string>3</string>
+				<key>topic_id</key>
+				<string>5</string>
+				<key>title</key>
+				<string>过去五年，广东经济综合实力显著增强，全省地区生产总值从5.32万亿元增加到7.95万亿元，年均增长8.0％，总量连续______年居全国首位。</string>
+				<key>type</key>
+				<string>0</string>
+				<key>option_xuan</key>
+				<array>
+					<array>
+						<string>A</string>
+						<string>15</string>
+					</array>
+					<array>
+						<string>B</string>
+						<string>20</string>
 					</array>
 					<array>
 						<string>C</string>
-						<string>细胞膜</string>
+						<string>28</string>
 					</array>
 					<array>
 						<string>D</string>
-						<string>线粒体</string>
+						<string>30</string>
 					</array>
 				</array>
 			</dict>
+            <dict>
+                <key>test_id</key>
+                <string>2</string>
+                <key>number</key>
+                <string>6</string>
+                <key>answer</key>
+                <string>B</string>
+                <key>score</key>
+                <string>3</string>
+                <key>topic_id</key>
+                <string>6</string>
+                <key>title</key>
+                <string>推进“两学一做”学习教育常态化制度化，坚持抓住“关键少数”与______相结合，突出党内政治生活的政治教育功能，把“两学一做”学习教育纳入“三会一课”等组织生活制度，长期坚持下去，形成常态。</string>
+                <key>type</key>
+                <string>0</string>
+                <key>option_xuan</key>
+                <array>
+                    <array>
+                        <string>A</string>
+                        <string>抓牢基层党组织书记</string>
+                    </array>
+                    <array>
+                        <string>B</string>
+                        <string>抓实基层支部</string>
+                    </array>
+                    <array>
+                        <string>C</string>
+                        <string>抓好基层党组织</string>
+                    </array>
+                    <array>
+                        <string>D</string>
+                        <string>抓好广大普通党员</string>
+                    </array>
+                </array>
+            </dict>
+            <dict>
+                <key>test_id</key>
+                <string>2</string>
+                <key>number</key>
+                <string>7</string>
+                <key>answer</key>
+                <string>A</string>
+                <key>score</key>
+                <string>3</string>
+                <key>topic_id</key>
+                <string>7</string>
+                <key>title</key>
+                <string>全党同志要增强政治意识、大局意识、核心意识、看齐意识，切实做到______、为党分忧、为党担责、为党尽责</string>
+                <key>type</key>
+                <string>0</string>
+                <key>option_xuan</key>
+                <array>
+                    <array>
+                        <string>A</string>
+                        <string>对党忠诚</string>
+                    </array>
+                    <array>
+                        <string>B</string>
+                        <string>对党老实</string>
+                    </array>
+                    <array>
+                        <string>C</string>
+                        <string>对党负责</string>
+                    </array>
+                    <array>
+                        <string>D</string>
+                        <string>对党认真</string>
+                    </array>
+                </array>
+            </dict>
 		</array>
 	</dict>
 </dict>

@@ -10,6 +10,8 @@
 #import "PTQuestionChoiceView.h"
 
 @interface PTQuestionCell () <PTQuestionChoiceViewDelegate>
+
+@property (nonatomic, strong) UIScrollView *scrollV;
 @property (nonatomic, strong) UIView *backView;                     // 白背景
 @property (nonatomic, strong) UILabel *titleLabel;                  // 题目
 @property (nonatomic, strong) UILabel *typeLabel;                   // 题目类型
@@ -88,11 +90,11 @@
     }
     self.choiceDesc = choiceArr.copy;
     
-    if (_choiceView && [self.contentView.subviews containsObject:_choiceView]) {
+    if (_choiceView && [self.scrollV.subviews containsObject:_choiceView]) {
         [self.choiceView removeFromSuperview];
         self.choiceView = nil;
     }
-    [self.contentView addSubview:self.choiceView];
+    [self.scrollV addSubview:self.choiceView];
     [self.choiceView setChoiceData:self.choiceDesc index:[model.topic_id integerValue]];
     
     
@@ -113,20 +115,20 @@
     
     _isFirst = isFirst;
     
-    if (_lastBtn && [self.contentView.subviews containsObject:self.lastBtn]) {
+    if (_lastBtn && [self.scrollV.subviews containsObject:self.lastBtn]) {
         [self.lastBtn removeFromSuperview];
     }
-    if (_nextBtn) {
+    if (_nextBtn && [self.scrollV.subviews containsObject:self.nextBtn]) {
         [self.nextBtn removeFromSuperview];
     }
     
     
     if (isFirst) {
-        [self.contentView addSubview:self.nextBtn];
+        [self.scrollV addSubview:self.nextBtn];
     }else {
         
-        [self.contentView addSubview:self.lastBtn];
-        [self.contentView addSubview:self.nextBtn];
+        [self.scrollV addSubview:self.lastBtn];
+        [self.scrollV addSubview:self.nextBtn];
     }
     
     self.nextBtn.enabled = false;
@@ -148,19 +150,24 @@
 #pragma mark - 视图布局
 - (void)createInterface {
     
-    [self.contentView addSubview:self.backView];
-    [self.contentView addSubview:self.titleLabel];
-    [self.contentView addSubview:self.typeLabel];
-    [self.contentView addSubview:self.middleLine];
+    [self.contentView addSubview:self.scrollV];
+    [self.scrollV addSubview:self.backView];
+    [self.scrollV addSubview:self.titleLabel];
+    [self.scrollV addSubview:self.typeLabel];
+    [self.scrollV addSubview:self.middleLine];
     
 }
 
 - (void)setConstraints {
     
+    [self.scrollV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.bottom.equalTo(self.contentView);
+    }];
+    
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(15);
-        make.right.equalTo(self.contentView).offset(-15);
-        make.top.equalTo(self.contentView).offset(18);
+        make.left.equalTo(self.scrollV).offset(15);
+        make.width.mas_equalTo(self.contentView.width - 30);
+        make.top.equalTo(self.scrollV).offset(18);
     }];
     
     [self.typeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -174,7 +181,7 @@
         make.height.mas_equalTo(0.5);
     }];
     
-    if (_choiceView && [self.contentView.subviews containsObject:_choiceView]) {
+    if (_choiceView && [self.scrollV.subviews containsObject:_choiceView]) {
         [self.choiceView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.equalTo(self.contentView);
             make.top.equalTo(self.middleLine.mas_bottom).offset(5);
@@ -197,7 +204,7 @@
     
     
     
-    if (self.lastBtn && [self.contentView.subviews containsObject:self.lastBtn]) {
+    if (self.lastBtn && [self.scrollV.subviews containsObject:self.lastBtn]) {
         
         [self.lastBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.contentView).offset(HP_SCALE_W(35));
@@ -211,7 +218,7 @@
             make.size.mas_equalTo(CGSizeMake(HP_SCALE_W(112), HP_SCALE_H(30)));
         }];
         
-    }else if (self.nextBtn && [self.contentView.subviews containsObject:self.nextBtn]) {
+    }else if (self.nextBtn && [self.scrollV.subviews containsObject:self.nextBtn]) {
         
         [self.nextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.contentView);
@@ -220,13 +227,24 @@
         }];
     }
     
-    
-    
+    //30+HP_SCALE_H(30)+50+HP_SCALE_H(60) * _choiceDesc.count+25+titleLabelHeight+18
+    //123+HP_SCALE_H(30)+HP_SCALE_H(60) * _choiceDesc.count+titleLabelHeight
+    self.scrollV.contentSize = CGSizeMake(self.width, 123+HP_SCALE_H(30)+HP_SCALE_H(60) * _choiceDesc.count+self.titleLabel.height);
     
 }
 
 
 #pragma mark - 懒加载
+- (UIScrollView *)scrollV {
+    
+    if (!_scrollV) {
+        _scrollV = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.height)];
+        _scrollV.backgroundColor = [UIColor hex:@"f5f5f5"];
+        _scrollV.scrollEnabled = true;
+    }
+    return _scrollV;
+}
+
 - (UIView *)backView {
     
     if (!_backView) {

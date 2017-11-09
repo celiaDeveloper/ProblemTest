@@ -12,6 +12,7 @@
 #import "PTTestResultModel.h"
 #import "NSDate+HPExtension.h"
 #import "LEEAlert.h"
+#import "HPProgressHUD.h"
 
 @interface PTQuestionViewController ()
 @property (nonatomic, strong) PTQuestionView *testView;
@@ -27,7 +28,7 @@
     NSInteger doNumber;     // 做题数量
     NSInteger rightNumber;  // 正确的数量
     NSInteger getScore;     // 得分
-    NSString *addUpAnswer;  // 统计答案
+    NSString *addUpAnswer;  // 统计答案 目前用字符串和“,”拼接，只适合单选题
 }
 
 - (void)viewDidLoad {
@@ -210,9 +211,10 @@
     }
     
     DEBUGLog(@"your answer string: %@",addUpAnswer);
-    DEBUGLog(@"做题数量%ld, 正确数%ld, 得分%ld", doNumber,rightNumber,getScore);
     
-    // 创建一个ResultModel
+    [HPProgressHUD showMessage:[NSString stringWithFormat:@"做题数量%ld, 正确数%ld, 得分%ld", doNumber,rightNumber,getScore]];
+    
+    // 创建一个ResultModel  可用这个model传递结果数据
     PTTestResultModel *resultM = [[PTTestResultModel alloc] init];
     resultM.use_time = StringValueFromInt(useTimes);
     resultM.questionNum = self.total_topic;

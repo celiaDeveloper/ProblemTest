@@ -106,6 +106,10 @@
 		3F1FF2061F9F290E00BCE39B /* PTQuestionChoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FF2051F9F290E00BCE39B /* PTQuestionChoiceView.m */; };
 		3F1FF2091F9F2AE200BCE39B /* PTQuestionChoiceButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FF2081F9F2AE200BCE39B /* PTQuestionChoiceButtonView.m */; };
 		3F1FF20C1F9F384E00BCE39B /* PTTestResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FF20B1F9F384E00BCE39B /* PTTestResultModel.m */; };
+		3F7BC79A1FB2FD3E009919A3 /* PTWrongView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BC7991FB2FD3E009919A3 /* PTWrongView.m */; };
+		3F7BC79D1FB2FD88009919A3 /* PTTestWrongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BC79C1FB2FD88009919A3 /* PTTestWrongModel.m */; };
+		3F7BC7A21FB2FDE8009919A3 /* PTWrongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BC7A11FB2FDE8009919A3 /* PTWrongCell.m */; };
+		3F7BC7A41FB30390009919A3 /* TestWrong.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F7BC7A31FB30390009919A3 /* TestWrong.plist */; };
 		9E04ADB283873E06159F9553 /* libPods-ProblemTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 245D9D0667CEFFA1DEB253AE /* libPods-ProblemTest.a */; };
 /* End PBXBuildFile section */
 
@@ -302,6 +306,13 @@
 		3F1FF2081F9F2AE200BCE39B /* PTQuestionChoiceButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTQuestionChoiceButtonView.m; sourceTree = "<group>"; };
 		3F1FF20A1F9F384E00BCE39B /* PTTestResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTestResultModel.h; sourceTree = "<group>"; };
 		3F1FF20B1F9F384E00BCE39B /* PTTestResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTestResultModel.m; sourceTree = "<group>"; };
+		3F7BC7981FB2FD3E009919A3 /* PTWrongView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTWrongView.h; sourceTree = "<group>"; };
+		3F7BC7991FB2FD3E009919A3 /* PTWrongView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTWrongView.m; sourceTree = "<group>"; };
+		3F7BC79B1FB2FD88009919A3 /* PTTestWrongModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTTestWrongModel.h; sourceTree = "<group>"; };
+		3F7BC79C1FB2FD88009919A3 /* PTTestWrongModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTTestWrongModel.m; sourceTree = "<group>"; };
+		3F7BC7A01FB2FDE8009919A3 /* PTWrongCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTWrongCell.h; sourceTree = "<group>"; };
+		3F7BC7A11FB2FDE8009919A3 /* PTWrongCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTWrongCell.m; sourceTree = "<group>"; };
+		3F7BC7A31FB30390009919A3 /* TestWrong.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestWrong.plist; sourceTree = "<group>"; };
 		64F15C1405E632CFB29FC5E2 /* Pods-ProblemTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProblemTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProblemTest/Pods-ProblemTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C05BEA7FB21060D40EE621E4 /* Pods-ProblemTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProblemTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProblemTest/Pods-ProblemTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -365,6 +376,7 @@
 				3F1FEF161F9EDE5D00BCE39B /* Info.plist */,
 				3F1FEF061F9EDE5D00BCE39B /* main.m */,
 				3F1FF1F01F9F1C6000BCE39B /* Question.plist */,
+				3F7BC7A31FB30390009919A3 /* TestWrong.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -416,6 +428,8 @@
 				3F1FF2021F9F281600BCE39B /* PTTestTopicModel.m */,
 				3F1FF20A1F9F384E00BCE39B /* PTTestResultModel.h */,
 				3F1FF20B1F9F384E00BCE39B /* PTTestResultModel.m */,
+				3F7BC79B1FB2FD88009919A3 /* PTTestWrongModel.h */,
+				3F7BC79C1FB2FD88009919A3 /* PTTestWrongModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -433,6 +447,10 @@
 				3F1FF2051F9F290E00BCE39B /* PTQuestionChoiceView.m */,
 				3F1FF2071F9F2AE200BCE39B /* PTQuestionChoiceButtonView.h */,
 				3F1FF2081F9F2AE200BCE39B /* PTQuestionChoiceButtonView.m */,
+				3F7BC7981FB2FD3E009919A3 /* PTWrongView.h */,
+				3F7BC7991FB2FD3E009919A3 /* PTWrongView.m */,
+				3F7BC7A01FB2FDE8009919A3 /* PTWrongCell.h */,
+				3F7BC7A11FB2FDE8009919A3 /* PTWrongCell.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -1018,6 +1036,7 @@
 				3F1FF0271F9EE61200BCE39B /* choose_down@2x.png in Resources */,
 				3F1FF1F11F9F1C6000BCE39B /* Question.plist in Resources */,
 				3F1FEF101F9EDE5D00BCE39B /* Main.storyboard in Resources */,
+				3F7BC7A41FB30390009919A3 /* TestWrong.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1094,6 +1113,7 @@
 				3F1FEFFC1F9EE61200BCE39B /* UIBarButtonItem+HPBarButtonItem.m in Sources */,
 				3F1FF1EA1F9EF07000BCE39B /* PTHomeViewController.m in Sources */,
 				3F1FF02B1F9EE61200BCE39B /* HPHLModeButton.m in Sources */,
+				3F7BC79D1FB2FD88009919A3 /* PTTestWrongModel.m in Sources */,
 				3F1FF2091F9F2AE200BCE39B /* PTQuestionChoiceButtonView.m in Sources */,
 				3F1FF0201F9EE61200BCE39B /* SFHFKeychainUtils.m in Sources */,
 				3F1FEFFF1F9EE61200BCE39B /* UICollectionView+HPExtension.m in Sources */,
@@ -1108,6 +1128,7 @@
 				3F1FEFEF1F9EE61200BCE39B /* NSArray+HPSafe.m in Sources */,
 				3F1FEFF21F9EE61200BCE39B /* NSDictionary+HPSafe.m in Sources */,
 				3F1FF1F71F9F217600BCE39B /* PTWrongViewController.m in Sources */,
+				3F7BC7A21FB2FDE8009919A3 /* PTWrongCell.m in Sources */,
 				3F1FF0071F9EE61200BCE39B /* UILabel+HPExtension.m in Sources */,
 				3F1FF1FA1F9F254D00BCE39B /* PTQuestionView.m in Sources */,
 				3F1FEF071F9EDE5D00BCE39B /* main.m in Sources */,
@@ -1136,6 +1157,7 @@
 				3F1FEF311F9EE3CF00BCE39B /* PTTabBarController.m in Sources */,
 				3F1FF1DE1F9EE62A00BCE39B /* HPNetManager.m in Sources */,
 				3F1FF1CE1F9EE61C00BCE39B /* UIView+Frame.m in Sources */,
+				3F7BC79A1FB2FD3E009919A3 /* PTWrongView.m in Sources */,
 				3F1FEFF31F9EE61200BCE39B /* NSMutableDictionary+HPSafe.m in Sources */,
 				3F1FF01F1F9EE61200BCE39B /* HPUserDefault.m in Sources */,
 				3F1FF0011F9EE61200BCE39B /* UICollectionViewFlowLayout+HPExtension.m in Sources */,
